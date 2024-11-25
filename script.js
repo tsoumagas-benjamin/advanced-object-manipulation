@@ -39,3 +39,8 @@ const scores = [83, 45, 28, 91, 82];
 const [first, second] = scores;
 console.log(first);
 console.log(second);
+
+// Part 4
+// Use the spread operator to clone the student object and add a new property
+let studentClone = {...student, graduationYear: 2027};
+console.log(studentClone);
