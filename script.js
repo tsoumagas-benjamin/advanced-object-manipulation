@@ -20,3 +20,11 @@ const student = {
 console.log(student.name);
 console.log(student.age);
 console.log(student.getInfo());
+
+// Part 2
+// Turn the student object to JSON and log it to the console
+let studentJSON = JSON.stringify(student);
+console.log(studentJSON);
+// Turn the JSON back to an object and log it to the console
+let studentObject = JSON.parse(studentJSON);
+console.log(studentObject);
