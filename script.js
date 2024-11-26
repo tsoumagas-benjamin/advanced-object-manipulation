@@ -44,3 +44,7 @@ console.log(second);
 // Use the spread operator to clone the student object and add a new property
 let studentClone = {...student, graduationYear: 2027};
 console.log(studentClone);
+// Combine student courses with a new array of courses with the spread operator
+let newCourses = ["Math", "Science", "History", "Art"];
+let combinedCourses = [...student.courses, ...newCourses];
+console.log(combinedCourses);
