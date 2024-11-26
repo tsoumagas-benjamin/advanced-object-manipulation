@@ -13,6 +13,10 @@ const student = {
             enrolment = "Not enrolled"
         }
         return `Name: ${this.name}\nAge: ${this.age}\nEnrolment Status: ${enrolment}\nCourses: ${enrolment ? this.courses : "N/A"}`
+    },
+    // Add method to dynamically add a new course to the courses array
+    addCourse(course) {
+        this.courses = [...this.courses, course];
     }
 }
 
@@ -48,3 +52,8 @@ console.log(studentClone);
 let newCourses = ["Math", "Science", "History", "Art"];
 let combinedCourses = [...student.courses, ...newCourses];
 console.log(combinedCourses);
+
+// Part 5
+// Call addCourse() from student object to dynamically add a course
+student.addCourse("Programming Languages");
+console.log(student.courses);
