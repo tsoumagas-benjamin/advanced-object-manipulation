@@ -17,6 +17,9 @@ const student = {
     // Add method to dynamically add a new course to the courses array
     addCourse(course) {
         this.courses = [...this.courses, course];
+    },
+    totalCourses() {
+        return this.courses.length;
     }
 }
 
@@ -57,3 +60,5 @@ console.log(combinedCourses);
 // Call addCourse() from student object to dynamically add a course
 student.addCourse("Programming Languages");
 console.log(student.courses);
+// Call totalCourses() from student object to get the total amount of courses
+console.log(student.totalCourses());
