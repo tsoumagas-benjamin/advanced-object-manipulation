@@ -62,3 +62,10 @@ student.addCourse("Programming Languages");
 console.log(student.courses);
 // Call totalCourses() from student object to get the total amount of courses
 console.log(student.totalCourses());
+
+//Bonus: Get average of scores array using reduce
+const initialValue = 0;
+const average = scores.reduce(
+  (accumulator, currentValue) => accumulator + currentValue, initialValue,
+) / scores.length;
+console.log(average);
